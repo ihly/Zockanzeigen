@@ -1,0 +1,44 @@
+#pageheader {
+	background-color: lightblue;
+	color: black;
+	padding: 40px;
+	text-align: center;
+}
+
+#sub{
+	text-decoration: none;
+	color: blue;
+	text-align: center;
+}
+
+#Icon {
+	position: center;
+	width: 42px;
+	height: 42px;
+}
+#Panel {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	float: left;
+	background: green;
+	margin: 5px;
+}
+
+#Auswahl {
+	width: 250px;
+	height: 100px;
+	float: left;
+	background: blue;
+	margin-right: 20px;
+}
+
+#Werbung {
+	position: absolute;
+	right: 7.5px;
+	width: 300px;
+	height: 500px; 
+	background: red; 
+}
+
+

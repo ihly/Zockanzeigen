@@ -1,7 +1,53 @@
+.nav {
+  background: #2c3e50;
+  -webkit-columns: 100px 7;
+  -moz-columns: 100px 7;
+  columns: 100px 7;
+  /* -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0; */
+  -webkit-column-rule: 1px none #1a242f;
+  -moz-column-rule: 1px none #1a242f;
+  column-rule: 1px none #1a242f;
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #1a242f;
+}
+.nav a:hover {
+  background: #1a242f;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+  background: #ecf0f1;
+}
+
+
+
+
+
+
+
 #pageheader {
-	background-color: lightblue;
-	color: black;
-	padding: 40px;
+	height: 55px;
+	background: #2c3e50;
+	color: white;
+	margin-bottom: 5px;
+	padding-bottom: 0;
+  position: relative;
+	z-index: 10;
 	text-align: center;
 }
 
@@ -47,10 +93,10 @@
 	width: 100%;
 	height: 50%;
 	float: left;
-	
+
 }
-	
-	
+
+
 #toplink {
 	width: 100%;
 	height: 10%;
@@ -58,17 +104,18 @@
 
 #Sidebar {
 	position: absolute;
-	right: 0.5%;
-	width: 20%;
-	height: 500px; 
-	float: none;
+	right: 0;
+	width: 300px;
+	height: 500px;
+	margin-right: 10px
+
 }
 
 #Werbung {
-	position: center;
+	margin-right: 11px;
 	width: 300px;
 	height: 500px;
-	
+
 }
 
 #Vorschläge {
@@ -78,10 +125,10 @@
 	float: left;
 	background: yellow;
 	margin-top: 10px;
-	
+
 }
 
 #Schrift {
-	color: black;	
-	
+	color: black;
+
 }

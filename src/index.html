@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zockanzeigen für Gamer</title>
+  <script src=""=".../inhalt/index.js"></script>
 	<link href="../inhalt/index.css" rel="stylesheet">
   </head>
   <body>
@@ -18,86 +20,55 @@
 
 <ul class="nav">
   <a href="#">Konsolen</a>
-  <li><a href="#">PS4-Spiele</a></li>
-  <li><a href="#">XBOX One Spiele</a></li>
-  <li><a href="#">Nintendo Spiele</a></li>
-  <li><a href="#">Zubehör</a></li>
+  <a href="#">PS4-Spiele</a>
+  <a href="#">XBOX One Spiele</a>
+  <a href="#">Nintendo Spiele</a>
+  <a href="#">Zubehör</a>
   <li></li>
-  <li><a href="indexAnmeldung.html">Anmeldung</a></li>
+  <a href="indexAnmeldung.html">Anmeldung</a>
 </ul>
 
-		<!-- <div id="Inhalt">
+<div class="box">
+  <div class="container-4">
+    <a href="#" class="anzeigeErstellen"><p id="anzeigeErstellenText">
+      Anzeige erstellen
+    </p></a>
+    <input type="search" id="search" placeholder="Produktsuche..." />
+  </div>
+</div>
 
-			<div id="Auswahl">
-				<div id="Suche">
-				<p id="Schrift"> Stadt wählen: </br> Suche:</p>
-				</div>
+<!-- <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="../Grafiken index.html/Werbung1.jpg">
+  <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg">
+</div> -->
 
-				<div id="toplink">
-				<a href="###Anmelden###">
-				<p id="Schrift">Anmelden</p>
-				</a>
-				<a href="###Registrieren###">
-				<p id="Schrift">Registrieren</p>
-				</a>
-				</div>
+<div id="Sidebar">
+  <a href="https://euw.leagueoflegends.com/de/" target="_blank">
+    <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
+  </a>
+<a href="https://www.callofduty.com/de/blackops4" target="_blank">
+  <img class="mySlides" src="../Grafiken index.html/Werbung1.jpg" alt="Selfhtml"/>
+</a>
+</div>
 
-				<div id="toplink">
-				<a href="###Anzeigeerstellen###">
-				<p id="Schrift">Anzeige erstellen</p>
-				</a>
-				</div>
+<script>
+var myIndex = 0;
+carousel();
 
-			</div>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 10000); // Change image every 2 seconds
+}
+</script>
 
-			<a href="###Filter###">
-			<div id="Panel">
-				<img id="Icon" src="../Grafiken index.html/Konsole.png" alt="Selfhtml"/>
-				<h2 id="sub">Konsolen</h2>
-			</div>
-			</a>
 
-			<a href="###Filter###">
-			<div id="Panel">
-				<img id="Icon" src="../Grafiken index.html/pc.png" alt="Selfhtml" />
-				<h2 id="sub">PC Spiele</h2>
-			</div>
-			</a>
-
-			<a href="###Filter###">
-			<div id="Panel">
-				<img id="Icon" src="../Grafiken index.html/PS4.jpg" alt="Selfhtml" />
-				<h2 id="sub">PS4 Spiele</h2>
-			</div>
-			</a>
-
-			<a href="###Filter###">
-			<div id="Panel">
-			<img id="Icon" align="middle" src="../Grafiken index.html/XBOX.png" alt="Selfhtml"/>
-			<h2 id="sub">XBOX Spiele</h2>
-			</div>
-			</a>
-
-			<a href="###Filter###">
-			<div id="Panel">
-			<img id="Icon" src="../Grafiken index.html/Switch.png" alt="Selfhtml" />
-			<h2 id="sub">Nintendo Switch</h2>
-			</div>
-			</a>
-
-			<a href="###Filter###">
-			<div id="Panel">
-			<img id="Icon" src="../Grafiken index.html/Plus.png" alt="Selfhtml" />
-			<h2 id="sub">Zubehör</h2>
-			</div>
-			</a>
-
-		</div>
--->
-		<div id="Sidebar">
-		<img id="Werbung" src="../Grafiken index.html/Werbung1.jpg" alt="Selfhtml" />
-		<img id="Werbung" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
-		</div>
 
 
 

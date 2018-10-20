@@ -208,3 +208,32 @@ body {
   width: 300px;
   margin-right: 11px;
 }
+/* Anzeigeerstellen.html css */
+#headline {
+	
+	float: left;
+	position: absolute;
+	width: 25%;
+	left:25%;
+	
+	
+}
+#Feld {
+	float: right;
+	position: absolute;
+	width: 25%;
+	right: 25%;
+	
+	
+}
+#pageheader2 {
+	height: 60px;
+	color: black;
+	margin-bottom: 5px;
+	padding-bottom: 0;
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0;
+	padding-bottom: 0;
+}

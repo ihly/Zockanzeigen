@@ -7,17 +7,20 @@
     <link href="../inhalt/index.css" rel="stylesheet">
   </head>
   <body/>
-  	<h1 id="pageheader">Zockanzeigen</h1>
+  	<a href="index.html"><h1 id="pageheader">Zockanzeigen</h1></a>
 
 <center>
+
       <table id="createcontent">
-        <caption id="table">Beitrag erstellen</caption>
+	  <caption id="table">Beitrag erstellen</caption>
+	  <form method="post" action="index.php" enctype="multipart/form-data">
+	  <input type="hidden" name="size" value="1000000">
+        
 
 		
 		<tr id="tablerow">
            <td style="allign: left">Kategorie</td>
            <td>
-				<form action="select.html">
 				<select name="top5" size="1">
 					<option>-------</option>
 					<option>Konsole</option>
@@ -26,7 +29,6 @@
 					<option>Nintendo Spiel</option>
 					<option>Zubehör</option></td>
 				</select>
-				</form>
         </tr>
 		
         <tr id="tablerow">
@@ -55,9 +57,10 @@
             <input id="submitlogin" type="submit" tabindex="5" value="Beitrag veröffentlichen"/>
          </td>
         </tr>
+		</form>
       </table>
 
-
+	
     </center>
 
   </body/>

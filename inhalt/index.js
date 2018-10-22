@@ -1,5 +1,12 @@
 var slideIndex = 0;
-carousel();
+
+
+window.onload = load;
+
+function load()
+{
+ carousel();
+}
 
 function carousel() {
     var i;

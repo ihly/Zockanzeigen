@@ -162,13 +162,6 @@ body {
 
 }
 
-#Werbung {
-	margin-right: 11px;
-	width: 300px;
-	height: 500px;
-
-}
-
 #Vorschläge {
 	position: relative;
 	width: 79%;
@@ -197,34 +190,28 @@ body {
 
 .mySlides {
   display : none;
-  height: 500px;
+  height: 600px;
   width: 300px;
   margin-right: 11px;
 }
 
-.mySlides2 {
-  display : none;
-  height: 500px;
-  width: 300px;
-  margin-right: 11px;
-}
 /* Anzeigeerstellen.html css */
 #headline {
-	
+
 	float: left;
 	position: absolute;
 	width: 25%;
 	left:25%;
-	
-	
+
+
 }
 #Feld {
 	float: right;
 	position: absolute;
 	width: 25%;
 	right: 25%;
-	
-	
+
+
 }
 #pageheader2 {
 	height: 60px;

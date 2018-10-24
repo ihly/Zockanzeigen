@@ -82,7 +82,7 @@ $result = mysqli_query($connect, $query);
           {
      ?>
      <div class="col-md-4">
-          <div style="padding:5ex; margin-bottom:5ex; height:60ex;" align="center">
+          <div style="padding:5ex; margin-bottom:5ex; height:70ex;" align="center">
                <?php echo "<img src='images/".$row['image']."' class='img-responsive'>"; ?>
                <h3><?php echo $row["name"]; ?></h3>
                <h4>Preis : <?php echo $row["price"]; ?>€</h4>

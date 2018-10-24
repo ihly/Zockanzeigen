@@ -16,17 +16,19 @@
 
     $price = mysqli_real_escape_string($db, $_POST['price']);
 
+    $name = mysqli_real_escape_string($db, $_POST['name']);
+
 
   	// image file directory
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text, category, price) VALUES ('$image', '$image_text', '$category', '$price')";
+  	$sql = "INSERT INTO images (image, image_text, category, price, name) VALUES ('$image', '$image_text', '$category', '$price', '$name')";
   	// execute query
   	mysqli_query($db, $sql);
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "Image uploaded successfully";
-      header("Location: index.html");
+      header("Location: index.php");
   	}else{
   		$msg = "Failed to upload image";
   	}
@@ -45,8 +47,8 @@
     <link href="../inhalt/index.css" rel="stylesheet">
   </head>
   <body/>
-  	<a href="index.html"><h1 id="pageheader">Zockanzeigen</h1></a>
-	
+  	<a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
+
   	<div id="Sidebar">
   <a href="https://euw.leagueoflegends.com/de/" target="_blank">
     <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
@@ -62,20 +64,25 @@
   </a>
 </div>
 
-  	
+
 
 <center>
 
   <form method="POST" action="indexBeitragErstellen.php" enctype="multipart/form-data">
   <div class="format">
     <input type="hidden" name="size" value="1000000">
- 
 
-	
     <div>
-      
+
+         <p class="Form">Artikelname</p>
+         <input id="name" type="tablerow" name="name" placeholder="Artikelname" style="width:111.85px" minlength="5"/>
+
+    </div>
+
+    <div>
+
              <p class="Form">Kategorie</p>
-             
+
           <select name="category" size="1">
             <option>-------</option>
             <option>Konsole</option>
@@ -84,21 +91,21 @@
             <option>Nintendo Spiel</option>
             <option>Zubehör</option>
           </select>
-      
+
     </div>
-	
+
     <div>
-      
+
          <p class="Form">Preis</p>
-         <input id="price" type="tablerow" name="price" placeholder="Preis" style="width:111.85px" minlength="5"/>
-      
+         <input id="price" type="tablerow" name="price" placeholder="Preis" style="width:111.85px"/>
+
     </div>
-	
+
 	<div>
 		<p class="Form">Bild einfügen</p>
 		<input type="file" name="image">
     </div>
-	
+
 	<p class="Form">Artikelbeschreibung</p>
 	    <div id="Beschreibung">
       <textarea
@@ -114,7 +121,7 @@
     </div>
 	</div>
   </form>
-  
+
 
   </div>
 </center>

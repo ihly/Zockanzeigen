@@ -8,12 +8,18 @@
       $result = mysqli_query($connect, $query);
       if(mysqli_num_rows($result) > 0)
       {
-        while ($row = mysqli_fetch_array($result)) {
-            echo "<div id='img_div'>";
-            echo "<img src='images/".$row['image']."' >";
-            echo "<p>".$row['image_text']."</p>";
-            echo "</div>";
-      }
+           while($row = mysqli_fetch_array($result))
+           {
+                $output .= '
+                     <div class="col-md-4">
+                          <div style="border:1px solid #ccc; padding:12px; margin-bottom:16px; height:375px;" align="center">
+                               <img src="images/'.$row["image"].'" class="img-responsive" />
+                               <h3>'.$row["name"].'</h3>
+                               <h4>Price - '.$row["price"].'</h4>
+                          </div>
+                     </div>
+                ';
+           }
       }
       else
       {

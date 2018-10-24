@@ -44,7 +44,7 @@ $result = mysqli_query($connect, $query);
 </div>
 
 
-
+<div>
 <div id="Sidebar">
   <a href="https://euw.leagueoflegends.com/de/" target="_blank">
     <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
@@ -62,6 +62,7 @@ $result = mysqli_query($connect, $query);
 
 
 <br /><br />
+
 <div class="container" style="width:800px;">
      <br />
      <h3 align="center">Nach Preis filtern</h3>
@@ -72,6 +73,8 @@ $result = mysqli_query($connect, $query);
      </div>
      <br /><br /><br />
 	 </div>
+	 
+	
 	 
 	 <div id="Produkte">
      <div id="product_loading">
@@ -93,8 +96,8 @@ $result = mysqli_query($connect, $query);
      }
      ?>
      </div>
-	 
 	 </div>
+
 
 
 

@@ -34,10 +34,14 @@ $result = mysqli_query($connect, $query);
   <a href="indexAnmeldung.html">Anmeldung</a>
 </ul>
 
+<div class="box">
+  <div class="container-4">
+    <input type="search" id="search" placeholder="Produktsuche..." />
+  </div>
+</div>
 
 
-
-
+<div>
 <div id="Sidebar">
   <a href="https://euw.leagueoflegends.com/de/" target="_blank">
     <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
@@ -55,6 +59,7 @@ $result = mysqli_query($connect, $query);
 
 
 <br /><br />
+
 <div class="container" style="width:800px;">
      <br />
      <h3 align="center">Nach Preis filtern</h3>
@@ -64,6 +69,11 @@ $result = mysqli_query($connect, $query);
           <span id="price_range"></span>
      </div>
      <br /><br /><br />
+	 </div>
+	 
+	
+	 
+	 <div id="Produkte">
      <div id="product_loading">
      <?php
      if(mysqli_num_rows($result) > 0)
@@ -72,7 +82,7 @@ $result = mysqli_query($connect, $query);
           {
      ?>
      <div class="col-md-4">
-          <div style="padding:5ex; margin-bottom:5ex; height:35ex;" align="center">
+          <div style="padding:5ex; margin-bottom:5ex; height:70ex;" align="center">
                <?php echo "<img src='images/".$row['image']."' class='img-responsive'>"; ?>
                <h3><?php echo $row["name"]; ?></h3>
                <h4>Preis : <?php echo $row["price"]; ?>€</h4>
@@ -83,7 +93,9 @@ $result = mysqli_query($connect, $query);
      }
      ?>
      </div>
-</div>
+	 </div>
+
+
 
 
   </body>
@@ -98,20 +110,6 @@ $(document).ready(function(){
                url:"load_product.php",
                method:"POST",
                data:{price:price},
-               success:function(data){
-                    $("#product_loading").fadeIn(500).html(data);
-               }
-          });
-     });
-});
-
-$(document).ready(function(){
-     $('#Konsole').change(function(){
-          var Konsole = $(this).val();
-          $.ajax({
-               url:"load_product.php",
-               method:"POST",
-               data:{Kategorie:Konsole},
                success:function(data){
                     $("#product_loading").fadeIn(500).html(data);
                }

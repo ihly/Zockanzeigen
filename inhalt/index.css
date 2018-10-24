@@ -162,6 +162,8 @@ body {
 
 }
 
+
+
 #Vorschläge {
 	position: relative;
 	width: 79%;
@@ -195,7 +197,7 @@ body {
   margin-right: 11px;
 }
 
-/* Anzeigeerstellen.html css */
+/* Beitragerstellen.php css */
 #headline {
 
 	float: left;
@@ -223,4 +225,17 @@ body {
 	font-size: 30px;
 	margin-top: 0;
 	padding-bottom: 0;
+}
+
+.Form {
+	color:white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.format {
+	background: #2c3e50;
+	width: 400px;
+	
 }

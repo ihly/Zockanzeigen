@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "michael", "michael", "image_upload");
+$connect = mysqli_connect("localhost", "root", "", "image_upload");
 $query = "SELECT * FROM images ORDER BY price desc";
 $result = mysqli_query($connect, $query);
 ?>

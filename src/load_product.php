@@ -1,6 +1,6 @@
 <?php
  //load_product.php
- $connect = mysqli_connect("localhost", "michael", "michael", "image_upload");
+ $connect = mysqli_connect("localhost", "root", "", "image_upload");
  if(isset($_POST["price"]))
  {
       $output = '';

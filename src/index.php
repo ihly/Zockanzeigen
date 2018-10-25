@@ -22,7 +22,7 @@ $result = mysqli_query($connect, $query);
 
   <body>
 
-	<a href="http://localhost/Zockanzeigen/src/index.php""><h1 id="pageheader">Zockanzeigen</h1></a>
+    <a href="http://localhost/Zockanzeigen/src/index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
 
 <ul class="nav">
   <a href="indexKonsole.php">Konsolen</a>
@@ -73,9 +73,9 @@ $result = mysqli_query($connect, $query);
      </div>
      <br /><br /><br />
 	 </div>
-	 
-	
-	 
+
+
+
 	 <div id="Produkte">
      <div id="product_loading">
      <?php

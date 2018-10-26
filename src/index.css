@@ -163,13 +163,17 @@ body {
 #Sidebar {
 	position: absolute;
 	right: 0;
-	width: 300px;
+	width: 50%;
 	height: 500px;
 	margin-right: 9px;
 
 }
 
-
+#Mainbar {
+	position: absolute;
+	left: 0;
+	right: 30%;
+}
 
 #Vorschläge {
 	position: relative;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 24. Okt 2018 um 17:20
+-- Erstellungszeit: 26. Okt 2018 um 10:09
 -- Server-Version: 10.1.36-MariaDB
 -- PHP-Version: 7.2.10
 
@@ -12,8 +12,7 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-CREATE DATABASE IF NOT EXISTS `image_upload` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `image_upload`;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -43,11 +42,11 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) VALUES
-(0, 'NES.jpg', 'gebrauchsspuren sichtbar, aber funktioniert Einwandfrei', 75.00, 'Konsole','NES'),
-(1,'Nintendo.jpg', 'neuwertig', 100.00,'Konsole','Nintendo DS'),
-(2, 'PS4Projekt.jpg','fast neu, original verpackt',200.00,'Konsole',"PS4Pro"),
-(3, 'Switch.jpg', 'halbes Jahr genutzt.',225.00,'Konsole','Switch'),
-(4, 'XBOX.jpg', 'NEU', 250.00, 'Konsole','XBOX');
+(0, 'NES.jpg', 'gebrauchsspuren sichtbar, aber funktioniert Einwandfrei', 75, 'Konsole', 'NES'),
+(1, 'Nintendo.jpg', 'neuwertig', 100, 'Konsole', 'Nintendo DS'),
+(2, 'PS4Projekt.jpg', 'fast neu, original verpackt', 200, 'Konsole', 'PS4Pro'),
+(3, 'Switch.jpg', 'halbes Jahr genutzt.', 225, 'Konsole', 'Switch'),
+(4, 'XBOX.jpg', 'NEU', 250, 'Konsole', 'XBOX');
 
 -- --------------------------------------------------------
 
@@ -60,8 +59,15 @@ CREATE TABLE `kunde` (
   `name` varchar(20) NOT NULL,
   `passwort` varchar(20) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `ort` varchar(30) NOT NULL
+  `plz` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `kunde`
+--
+
+INSERT INTO `kunde` (`id`, `name`, `passwort`, `email`, `plz`) VALUES
+(1, 'admin', 'admin', 'admin@admin.de', 77777);
 
 --
 -- Indizes der exportierten Tabellen
@@ -93,7 +99,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT für Tabelle `kunde`
 --
 ALTER TABLE `kunde`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -12,9 +12,9 @@
   //Überprüfung des Passworts
   if ($kunde !== false && password_verify($passwort, $kunde['passwort'])) {
    $_SESSION['kundeid'] = $kunde['id'];
-   die('Login erfolgreich.'<a href="geheim.php">internen Bereich</a>);
+   die('Login erfolgreich.<a href="geheim.php">internen Bereich</a>');
   } else {
-     $errorMessage = "Email-Adresse oder Passwort war ungültig"<br>;
+     $errorMessage = "Email-Adresse oder Passwort war ungültig<br>";
   }
 
  }
@@ -25,7 +25,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anmeldung</title>
-  <link href="../inhalt/index.css" rel="stylesheet">
+  <link href="../src/index.css" rel="stylesheet">
  </head>
  <body/>
   <a href="http://localhost/Zockanzeigen/src/index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
@@ -54,7 +54,7 @@
      <td><input id="submitlogin" type="submit" tabindex="5" value="Anmelden"/></td>
     </tr>
    </table>
-   <a id="link" href="indexRegistrierung.html">Noch kein Kunde? Hier Registrieren.</a>
+   <a id="link" href="indexRegistrierung.php">Noch kein Kunde? Hier Registrieren.</a>
   </center>
  </body/>
 </html>

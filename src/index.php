@@ -31,7 +31,7 @@ $result = mysqli_query($connect, $query);
   <a href="#">Nintendo Spiele</a>
   <a href="#">Zubehör</a>
   <li>.</li>
-  <a href="indexAnmeldung.html">Anmeldung</a>
+  <a href="login.php">Anmeldung</a>
 </ul>
 
 <div class="box">

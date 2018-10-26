@@ -1,5 +1,5 @@
 <?php
-// Create database connection
+ // Create database connection
  $db = mysqli_connect("localhost", "root", "", "image_upload");
 
  if(isset($_GET['login'])) {

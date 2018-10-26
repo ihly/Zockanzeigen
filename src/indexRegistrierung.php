@@ -91,13 +91,18 @@
    </tr>
 
    <tr>
+    <td style="allign: left">Passwort wiederholen</td>
+    <td><input type="password" name="password2" placeholder="Passwort wiederholen" style="width:111.85px"/></td>
+   </tr>
+
+   <tr>
     <td style="allign: left">Email</td>
     <td><input id="email" type="email" name="email" placeholder="Email-Adresse" style="width:111.85px"/></td>
    </tr>
 
    <tr>
-    <td style="allign: left">Wohnort</td>
-    <td><input id="placeOfResidenz" type="text" name="placeOfResidenz" placeholder="Wohnort" style="width:111.85px"/></td>
+    <td style="allign: left">Postleitzahl</td>
+    <td><input id="plz" type="text" name="postleitzahl" placeholder="Postleitzahl" style="width:111.85px"/></td>
    </tr>
 
    <tr>

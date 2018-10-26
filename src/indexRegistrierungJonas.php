@@ -1,11 +1,11 @@
 <?php
   // Create database connection
+  $db = mysqli_connect("localhost", "root", "", "image_upload");
 
+  $msg = "";
 
   if(isset($_POST['upload'])){
-    $db = mysqli_connect("localhost", "root", "", "image_upload");
 
-    $msg = "";
     //Name
     $name = mysqli_real_escape_string($db, $_POST['name']);
 
@@ -28,22 +28,22 @@
     }
 
     //Test ob die Passwörter übereinstimmen
-    if($passwort != $passwort2) {
-     echo 'Die Passwörter müssen übereinstimmen<br>';
-     $error = true;
-   }
+   //  if($passwort != $passwort2) {
+   //   echo 'Die Passwörter müssen übereinstimmen<br>';
+   //   $error = true;
+   // }
 
     //Überprüfung ob die Email-Adresse bereits in der DB ist
-    if(!$error) {
-     $statement = $db->prepare("SELECT * FROM kunde WHERE email = :email");
-     $result = $statement->execute(array('email' => $email));
-     $kunde = $statement->fetch();
-
-     if($kunde !== false) {
-     echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
-     $error = true;
-     }
-    }
+    // if(!$error) {
+    //  $statement = $db->prepare("SELECT * FROM kunde WHERE email = :email");
+    //  $result = $statement->execute(array('email' => $email));
+    //  $kunde = $statement->fetch();
+    //
+    //  if($kunde !== false) {
+    //  echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+    //  $error = true;
+    //  }
+    // }
 
      $sql = "INSERT INTO kunde (name, passwort, email, plz) VALUES ('$name','$passwort','$email','$plz')";
 
@@ -103,7 +103,7 @@
 
    <tr>
     <td></td>
-    <td><input type="submit" value="upload"/></td>
+    <td><input type="submit" name="upload"/>Regestrieren</td>
    </tr>
   </table>
  </center>

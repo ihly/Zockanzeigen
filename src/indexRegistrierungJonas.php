@@ -1,31 +1,19 @@
 <?php
   // Create database connection
-  $db = mysqli_connect("localhost", "root", "", "image_upload");
-?>
-<!DOCTYPE html>
- <html lang="de">
 
-  <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Registrierung</title>
-   <link href="../src/index.css" rel="stylesheet">
-  </head>
 
-  <body/>
-   <a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
-   <?php
-     $db = mysqli_connect("localhost", "root", "", "image_upload");
+  if(isset($_POST['upload'])){
+    $db = mysqli_connect("localhost", "root", "", "image_upload");
 
-    $showFormular = true; //Variable ob die Registrierung angezeigt werden soll
+    $msg = "";
+    //Name
+    $name = mysqli_real_escape_string($db, $_POST['name']);
 
-    if(isset($_GET['register'])) {
-     $error = false;
-     $name = $_POST['name'];
-     $passwort = $_POST['passwort'];
-     $passwort2 = $_POST['passwort2'];
-     $email = $_POST['email'];
-     $plz = $_POST['plz'];
+    $passwort = mysqli_real_escape_string($db, $_POST['passwort']);
+
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+
+    $plz = mysqli_real_escape_string($db, $_POST['plz']);
 
     //Überprüfung ob die Email-Adresse gültig ist
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -57,23 +45,32 @@
      }
     }
 
-    //Keine Errors, wir können den Nutzer registrieren
-    if(!$error) {
-     $statement = $db->prepare("INSERT INTO kunde (name, passwort, email, plz) VALUES (:name, :passwort, :email, :plz)");
-     $result = $statement->execute(array('name' => $name, 'passwort' => $passwort, 'email' => $email, 'plz' => $plz));
+     $sql = "INSERT INTO kunde (name, passwort, email, plz) VALUES ('$name','$passwort','$email','$plz')";
+
+     mysqli_query($db,$sql);
+
+     $result = mysqli_query($db, "SELECT * FROM kunde");
 
      if($result) {
       echo 'Du wurdest erfolgreich registriert.<a href="login.php">Zum Login</a>';
-      $showFormular = false;
      } else {
-        echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>Bitte Angaben überprüfen';
-       }
+      echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>Bitte Angaben überprüfen';
      }
-    }
+   }
+?>
 
-    if($showFormular) {
-     //öffnet die If Bedingung
-   ?>
+<!DOCTYPE html>
+ <html lang="de">
+
+  <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Registrierung</title>
+   <link href="../src/index.css" rel="stylesheet">
+  </head>
+
+  <body/>
+   <a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
  <form action="?register=1" method="post">
  <center>
   <table>
@@ -106,14 +103,10 @@
 
    <tr>
     <td></td>
-    <td><input type="submit" value="Abschicken"/></td>
+    <td><input type="submit" value="upload"/></td>
    </tr>
   </table>
  </center>
  </form>
- <?php
- //schließt die If Bedingung
- }
- ?>
   </body/>
  </html>

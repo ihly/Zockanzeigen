@@ -43,24 +43,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beitrag erstellen</title>
-	 <script src="../inhalt/index.js"></script>
-    <link href="../inhalt/index.css" rel="stylesheet">
+	 <script src="../src/index.js"></script>
+    <link href="../src/index.css" rel="stylesheet">
   </head>
   <body/>
   	<a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
 
   	<div id="Sidebar">
   <a href="https://euw.leagueoflegends.com/de/" target="_blank">
-    <img class="mySlides" src="../Grafiken index.html/Werbung2.jpg" alt="Selfhtml" />
+    <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
   </a>
   <a href="https://www.callofduty.com/de/blackops4" target="_blank">
-    <img class="mySlides" src="../Grafiken index.html/Werbung1.jpg" alt="Selfhtml"/>
+    <img class="mySlides" src="../Grafiken/Werbung1.jpg" alt="Selfhtml"/>
   </a>
   <a href="https://playhearthstone.com/de-de/" target="_blank">
-    <img class="mySlides" src="../Grafiken index.html/Werbung3.jpg" alt="Selfhtml"/>
+    <img class="mySlides" src="../Grafiken/Werbung3.jpg" alt="Selfhtml"/>
   </a>
   <a href="https://fallout.bethesda.net/" target="_blank">
-    <img class="mySlides" src="../Grafiken index.html/Werbung4.jpg" alt="Selfhtml"/>
+    <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
   </a>
 </div>
 

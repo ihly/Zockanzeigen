@@ -20,9 +20,9 @@
      <html lang="de">
      <head>
        <meta charset="UTF-8">
-       <meta http-equiv="refresh" content="0"; url="http://localhost/Zockanzeigen/src/geheim.php">
+       <meta http-equiv="refresh" content="0"; url="http://localhost/Zockanzeigen/src/indexloggedin.php">
        <script type="text/javascript">
-         window.location.href="http://localhost/Zockanzeigen/src/geheim.php"
+         window.location.href="http://localhost/Zockanzeigen/src/indexloggedin.php"
        </script>
        </head>
        <body>

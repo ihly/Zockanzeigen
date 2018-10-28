@@ -89,7 +89,7 @@
             <option>PS4 Spiel</option>
             <option>X-BOX Spiel</option>
             <option>Nintendo Spiel</option>
-            <option>Zubehör</option>
+            <option>Sonstige</option>
           </select>
 
     </div>

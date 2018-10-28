@@ -3,22 +3,39 @@
  $db = mysqli_connect("localhost", "root", "", "image_upload");
 
  if(isset($_GET['login'])) {
-  $email = $_POST['email'];
-  $passwort = $_POST['passwort'];
-  $statement = $pdo->prepare("SELECT * FROM kunde WHERE email = :email");
-  $result = $statement->execute(array('email' => $email));
-  $kunde = $statement->fetch();
 
-  //Überprüfung des Passworts
-  if ($kunde !== false && password_verify($passwort, $kunde['passwort'])) {
-   $_SESSION['kundeid'] = $kunde['id'];
-   die('Login erfolgreich.<a href="geheim.php">internen Bereich</a>');
-  } else {
-     $errorMessage = "Email-Adresse oder Passwort war ungültig<br>";
-  }
+   //Formular auslesen
+   $email = $_POST["email"];
+   $passwort = $_POST["password"];
 
+   $a = mysqli_query($db, "SELECT * FROM kunde WHERE email = '$email' AND passwort = '$passwort'");
+
+   $b = mysqli_fetch_array($a);
+
+   if($b != NULL){
+
+     //Direktverlinkung der Startseite für Angemeldete Benutzer
+    ?>
+     <!DOCTYPE html>
+     <html lang="de">
+     <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="refresh" content="0"; url="http://localhost/Zockanzeigen/src/geheim.php">
+       <script type="text/javascript">
+         window.location.href="http://localhost/Zockanzeigen/src/geheim.php"
+       </script>
+       </head>
+       <body>
+       </body>
+     </html>
+<?php
+
+   }else{
+      echo 'Login nicht erfolgreich.';
+   }
  }
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
  <head>

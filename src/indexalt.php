@@ -20,9 +20,6 @@
    </head>
 
    <body>
-     <?php
-        echo 'Anmeldung erfolgreich. Sie können nun Anzeigen erstellen.'
-     ?>
 
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
@@ -35,7 +32,7 @@
          <a href="#">Nintendo Spiele</a>
          <a href="#">Sonstige</a>
          <li>.</li>
-         <a href="geheim.php"></a>
+         <a href="login.php">Anmeldung</a>
       </ul>
 
 	  <div id="mainbar">						<!-- div für den Hauptteil (Anzeigen, Suche, Filter) -->

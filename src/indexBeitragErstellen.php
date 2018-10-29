@@ -51,7 +51,7 @@
   <body/>
   	<a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
 
-  	<div id="Sidebar">
+  	<div id="SidebarBeitragErstellen">
   <a href="https://euw.leagueoflegends.com/de/" target="_blank">
     <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
   </a>

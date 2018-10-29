@@ -77,23 +77,21 @@
 				</div>
 			</div>
 
-       <ul class="nav">
+
          <div id="iFeatures">
            <div class="ticker">
-             <li><a href="https://www.lolesports.com/en_US/worlds/world_championship_2018/schedule/elim/Finals"></a></a><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
+             <li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
            </div>
          </div>
 
 
-
+         <ul class="nav">
        <?php
        echo $tab_menu;
        ?>
-       <a href="IndexBeitragErstellen.php" class="anzeigeErstellen">
-          <p id="anzeigeErstellenText">
-           Anzeige erstellen
-          </p>
-       <a href="login.php" class="anzeigeErstellen"><p id="anzeigeErstellenText">Anmeldung</p></a>
+       <a href="login.php" class="anzeigeErstellen">
+          <p id="anzeigeErstellenText">Anzeige erstellen</p>
+       <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
        </ul>
 
 
@@ -104,6 +102,7 @@
        ?>
 
        </div>
+
 	        <div id="Sidebar">
          <a href="https://euw.leagueoflegends.com/de/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />

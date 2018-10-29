@@ -13,12 +13,12 @@
    {
     if($i == 0)
     {
-     $tab_menu .= '
-      <li class="active"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
-     ';
-     $tab_content .= '
-      <div id="'.$row["category_id"].'" class="tab-pane fade in active">
-     ';
+      $tab_menu .= '
+       <li class="active"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
+      ';
+      $tab_content .= '
+       <div id="'.$row["category_id"].'" class="tab-pane fade in active">
+      ';
     }
     else
     {
@@ -34,7 +34,7 @@
     while($sub_row = mysqli_fetch_array($product_result))
     {
      $tab_content .= '
-     <div class="col-md-3" style="margin-bottom:36px;">
+     <div class="col-md-3" style="margin-bottom:40px; height:100%;">
       <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" />
       <h4>'.$sub_row["name"].'</h4>
      </div>
@@ -42,7 +42,9 @@
     }
     $tab_content .= '<div style="clear:both"></div></div>';
     $i++;
+
    }
+
    ?>
 
 <!DOCTYPE html>
@@ -51,9 +53,6 @@
 
    <head>
       <meta charset="utf-8" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
@@ -66,30 +65,58 @@
    </head>
 
    <body>
-     <?php
-        echo 'Anmeldung erfolgreich. Sie können nun Anzeigen erstellen.'
-     ?>
-      <a href="http://localhost/Zockanzeigen/src/index.php">
+
+      <a href="http://localhost/Zockanzeigen/src/indexloggedin.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
+	   	<div id="iFeatures">
+				<div class="ticker">
+					<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
+              </p></li>
+				</div>
+			</div>
 
-       <ul class="nav">
+
+         <div id="iFeatures">
+           <div class="ticker">
+             <li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
+           </div>
+         </div>
+
+
+         <ul class="nav">
        <?php
        echo $tab_menu;
        ?>
        <a href="IndexBeitragErstellen.php" class="anzeigeErstellen">
-          <p id="anzeigeErstellenText">
-           Anzeige erstellen
-          </p>
-
+          <p id="anzeigeErstellenTextloggedin">Anzeige erstellen</p>
+       <a href="index.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Abmeldung</p></a>
        </ul>
-             <div class="container">
+
+
        <div class="tab-content">
 
        <?php
        echo $tab_content;
        ?>
+
        </div>
-     </body/>
-     </html>
+
+	        <div id="Sidebar">
+         <a href="https://euw.leagueoflegends.com/de/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
+         </a>
+         <a href="https://www.callofduty.com/de/blackops4" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung1.jpg" alt="Selfhtml"/>
+         </a>
+         <a href="https://playhearthstone.com/de-de/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung3.jpg" alt="Selfhtml"/>
+         </a>
+         <a href="https://fallout.bethesda.net/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
+         </a>
+      </div>
+		  <br/><br/>
+   </body>
+</html>

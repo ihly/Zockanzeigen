@@ -163,7 +163,7 @@ body {
 #Sidebar {
 	position: absolute;
 	right: 0;
-	top: 130px;
+	top: 170px;
 	height: 500px;
 	margin-right: 0;
 }
@@ -261,13 +261,13 @@ body {
 
 #iFeatures {
   position: absolute;
-  width: 75%;
+  width:99%;
   height: 30px;
   left: 0;
   top: 60px;
   background: #2c3e50;
   margin-left: 10px;
-
+  margin-right: 10px;
   margin-top: 5px;
 
 }

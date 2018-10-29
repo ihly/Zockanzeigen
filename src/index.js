@@ -22,16 +22,16 @@ function carousel() {
 
 $(document).ready(function() {
   var block_arr = $('.ticker li p').map(function() { return $(this).get(0);}).toArray();
-  
+
   var ticker_item = $(block_arr[0]);
   $(".ticker").html(ticker_item);
   var ticker_width = $(".ticker").width();
   var text_x = ticker_width;
-    
+
   console.log(block_arr.indexOf(ticker_item.get(0)));
   console.log(block_arr.length);
 
-  scroll_ticker = function() {    
+  scroll_ticker = function() {
     text_x--;
     ticker_item.css("left", text_x);
     if (text_x < -1 * ticker_item.width()) {
@@ -41,5 +41,5 @@ $(document).ready(function() {
       text_x = ticker_width;
     }
   }
-  setInterval(scroll_ticker, 7);
+  setInterval(scroll_ticker, 3);
 });

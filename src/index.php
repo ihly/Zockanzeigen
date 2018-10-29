@@ -74,9 +74,9 @@
 
 	   	   <div id="iFeatures">
 				<div class="ticker">
-					<li><p><a href="##">Release Red Dead Redemption bricht Rekorde!</a></p></li>
-					<li><p><a href="##">Jones kommt mit Git ned klar</a></p></li>
-					<li><p><a href="##">Hallo Welt Programmiererwort des Jahres</a></p></li>
+					<li><p>Game Releases 2018/2019 +++ Read Dead Redemption released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
+              </p></li>
+
 				</div>
 			</div>
 
@@ -97,10 +97,10 @@
        <?php
        echo $tab_content;
        ?>
-	   
 
-	   
-	   
+
+
+
        </div>
 
 	        <div id="Sidebar">

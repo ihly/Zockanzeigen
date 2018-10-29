@@ -261,7 +261,7 @@ body {
 
 #iFeatures {
   position: absolute;
-  width: 75%;
+  width: 99%;
   height: 30px;
   left: 0;
   top: 60px;
@@ -286,6 +286,7 @@ body {
   white-space: nowrap;
   width: auto;
   color: white;
+  font-weight: bold;
 }
 
 .ticker a {

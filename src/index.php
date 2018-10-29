@@ -7,7 +7,7 @@
    $tab_result = mysqli_query($connect, $tab_query);
    $tab_menu = '';
    $tab_content = '';
-   $i = 0;    
+   $i = 0;
 
    while($row = mysqli_fetch_array($tab_result))
    {
@@ -72,7 +72,7 @@
 
 	   	<div id="iFeatures">
 				<div class="ticker">
-					<li><p>Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
+					<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
               </p></li>
 				</div>
 			</div>
@@ -80,10 +80,12 @@
        <ul class="nav">
          <div id="iFeatures">
            <div class="ticker">
-             <li><p>Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
-                  </p></li>
+             <li><a href="https://www.lolesports.com/en_US/worlds/world_championship_2018/schedule/elim/Finals"></a></a><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
            </div>
          </div>
+
+
+
        <?php
        echo $tab_menu;
        ?>
@@ -101,11 +103,7 @@
        echo $tab_content;
        ?>
 
-
-
-
        </div>
-
 	        <div id="Sidebar">
          <a href="https://euw.leagueoflegends.com/de/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
@@ -120,24 +118,6 @@
          <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
          </a>
       </div>
-
-	  <!-- <div id="mainbar">
-		  <div class="box">
-			 <div class="container-4">
-				<a href="IndexBeitragErstellen.php" class="anzeigeErstellen">
-				   <p id="anzeigeErstellenText">
-					  Anzeige erstellen
-				   </p>
-				</a>
-				<input type="search" id="search" placeholder="Produktsuche..." />
-			 </div>
-		  </div> -->
-
 		  <br/><br/>
-
-
-
-
-
    </body>
 </html>

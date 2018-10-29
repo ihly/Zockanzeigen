@@ -67,15 +67,15 @@
 
    <body>
 
-   
-  
-   
-   
+
+
+
+
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-		
+
 
        <ul class="nav">
        <?php
@@ -87,8 +87,8 @@
           </p>
        <a href="login.php">Anmeldung</a>
        </ul>
-	   
-	   
+
+
 	      <div id="Sidebar">
          <a href="https://euw.leagueoflegends.com/de/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
@@ -102,9 +102,9 @@
          <a href="https://fallout.bethesda.net/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
          </a>
-      </div> 
-	   
-	   
+      </div>
+
+
              <div class="container">
        <div class="tab-content">
 
@@ -126,9 +126,9 @@
 		  </div> -->
 
 		  <br /><br />
-		  
-		
 
-       
+
+
+
    </body>
 </html>

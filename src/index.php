@@ -90,14 +90,21 @@
        </ul>
 
 
-
-
-
        <div class="tab-content">
 
        <?php
        echo $tab_content;
        ?>
+	   
+	   	   <div id="iFeatures">
+    <div class="ticker">
+      <li><p><a href="##">Release Red Dead Redemption bricht Rekorde!</a></p></li>
+      <li><p><a href="##">Jones kommt mit Git ned klar</a></p></li>
+      <li><p><a href="##">Hallo Welt Programmiererwort des Jahres</a></p></li>
+    </div>
+</div>
+	   
+	   
        </div>
 
 	        <div id="Sidebar">
@@ -128,6 +135,7 @@
 		  </div> -->
 
 		  <br/><br/>
+
 
 
 

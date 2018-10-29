@@ -12,6 +12,7 @@
 	margin-right: 10px;
 	padding-left: 0;
 	height: 100%;
+	top: 200px;
 }
 
 li {
@@ -30,9 +31,7 @@ li {
   color: white;
   font-size: 17px;
 }
-.nav a:hover {
-  background: black;
-}
+
 
 .tab-content {
 	left: 10px;
@@ -257,4 +256,36 @@ body {
  padding: 5px;
  margin: 15px auto;
  border: 1px solid #cbcbcb;
+}
+
+/*Newsticker*/
+
+#iFeatures {
+  position: absolute;
+  width: 75%;
+  height: 73px;
+  left: 0;
+  top: 135px;
+  background: #2c3e50;
+  margin-left: 10px;
+}
+.ticker {
+  position: absolute;
+  top: 25%;
+  left: 40px;
+  right: 10px;
+  bottom: 10%;
+  overflow: hidden;
+}
+
+.ticker p {
+  position: relative;
+  top: 0;
+  white-space: nowrap;
+  width: auto;
+  color: white;
+}
+
+.ticker a {
+  color: white;
 }

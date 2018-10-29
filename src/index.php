@@ -74,7 +74,7 @@
 
 	   	   <div id="iFeatures">
 				<div class="ticker">
-					<li><p>Game Releases 2018/2019 +++ Read Dead Redemption released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
+					<li><p>Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
               </p></li>
 
 				</div>

@@ -67,10 +67,15 @@
 
    <body>
 
+   
+  
+   
+   
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
+		
 
        <ul class="nav">
        <?php
@@ -82,6 +87,24 @@
           </p>
        <a href="login.php">Anmeldung</a>
        </ul>
+	   
+	   
+	      <div id="Sidebar">
+         <a href="https://euw.leagueoflegends.com/de/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
+         </a>
+         <a href="https://www.callofduty.com/de/blackops4" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung1.jpg" alt="Selfhtml"/>
+         </a>
+         <a href="https://playhearthstone.com/de-de/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung3.jpg" alt="Selfhtml"/>
+         </a>
+         <a href="https://fallout.bethesda.net/" target="_blank">
+         <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
+         </a>
+      </div> 
+	   
+	   
              <div class="container">
        <div class="tab-content">
 
@@ -103,20 +126,9 @@
 		  </div> -->
 
 		  <br /><br />
+		  
+		
 
-      <!-- <div id="Sidebar">
-         <a href="https://euw.leagueoflegends.com/de/" target="_blank">
-         <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
-         </a>
-         <a href="https://www.callofduty.com/de/blackops4" target="_blank">
-         <img class="mySlides" src="../Grafiken/Werbung1.jpg" alt="Selfhtml"/>
-         </a>
-         <a href="https://playhearthstone.com/de-de/" target="_blank">
-         <img class="mySlides" src="../Grafiken/Werbung3.jpg" alt="Selfhtml"/>
-         </a>
-         <a href="https://fallout.bethesda.net/" target="_blank">
-         <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
-         </a>
-      </div> -->
+       
    </body>
 </html>

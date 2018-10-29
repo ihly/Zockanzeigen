@@ -11,8 +11,10 @@
   column-rule: 1px none #1a242f;
 	margin-top: 0;
   margin-bottom: 5px;
-	margin-left: 0;
+	margin-left: 10px;
+	margin-right: 10px;
 	padding-left: 0;
+	height: 100%;
 }
 
 li {
@@ -163,10 +165,8 @@ body {
 #Sidebar {
 	position: absolute;
 	right: 0;
-	width: 50%;
 	height: 500px;
-	margin-right: 9px;
-
+	margin-right: 0;
 }
 
 #Mainbar {

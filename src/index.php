@@ -68,15 +68,17 @@
 
    <body>
 
-
-
-
-
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-
+	   	   <div id="iFeatures">
+				<div class="ticker">
+					<li><p><a href="##">Release Red Dead Redemption bricht Rekorde!</a></p></li>
+					<li><p><a href="##">Jones kommt mit Git ned klar</a></p></li>
+					<li><p><a href="##">Hallo Welt Programmiererwort des Jahres</a></p></li>
+				</div>
+			</div>
 
        <ul class="nav">
        <?php
@@ -96,13 +98,7 @@
        echo $tab_content;
        ?>
 	   
-	   	   <div id="iFeatures">
-    <div class="ticker">
-      <li><p><a href="##">Release Red Dead Redemption bricht Rekorde!</a></p></li>
-      <li><p><a href="##">Jones kommt mit Git ned klar</a></p></li>
-      <li><p><a href="##">Hallo Welt Programmiererwort des Jahres</a></p></li>
-    </div>
-</div>
+
 	   
 	   
        </div>

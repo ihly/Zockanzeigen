@@ -12,7 +12,8 @@
 	margin-right: 10px;
 	padding-left: 0;
 	height: 100%;
-	top: 200px;
+	
+	
 }
 
 li {
@@ -263,9 +264,9 @@ body {
 #iFeatures {
   position: absolute;
   width: 75%;
-  height: 73px;
+  height: 30px;
   left: 0;
-  top: 135px;
+  top: 60px;
   background: #2c3e50;
   margin-left: 10px;
 }

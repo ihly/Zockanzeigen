@@ -7,18 +7,18 @@
    $tab_result = mysqli_query($connect, $tab_query);
    $tab_menu = '';
    $tab_content = '';
-   $i = 0;
+   $i = 0;    
 
    while($row = mysqli_fetch_array($tab_result))
    {
     if($i == 0)
     {
-     $tab_menu .= '
-      <li class="active" style="margin-bottom:40px; height:100%;"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
-     ';
-     $tab_content .= '
-      <div id="" style="margin-bottom:40px; height:100px;"'.$row["category_id"].'" class="tab-pane fade in active">
-     ';
+      $tab_menu .= '
+       <li class="active"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
+      ';
+      $tab_content .= '
+       <div id="'.$row["category_id"].'" class="tab-pane fade in active">
+      ';
     }
     else
     {
@@ -44,6 +44,7 @@
     $i++;
 
    }
+
    ?>
 
 <!DOCTYPE html>
@@ -52,9 +53,6 @@
 
    <head>
       <meta charset="utf-8" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
@@ -72,15 +70,20 @@
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-	   	   <div id="iFeatures">
+	   	<div id="iFeatures">
 				<div class="ticker">
 					<li><p>Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
               </p></li>
-
 				</div>
 			</div>
 
        <ul class="nav">
+         <div id="iFeatures">
+           <div class="ticker">
+             <li><p>Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
+                  </p></li>
+           </div>
+         </div>
        <?php
        echo $tab_menu;
        ?>

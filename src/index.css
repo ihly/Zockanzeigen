@@ -6,14 +6,12 @@
   /* -webkit-column-gap: 0;
   -moz-column-gap: 0;
   column-gap: 0; */
-	margin-top: 0;
+	margin-top: 40px;
 	margin-bottom: 5px;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 0;
 	height: 100%;
-	
-	
 }
 
 li {
@@ -37,7 +35,7 @@ li {
 .tab-content {
 	left: 10px;
 	width: 75%;
-	
+
 }
 
 .container-4 input#search{
@@ -269,6 +267,9 @@ body {
   top: 60px;
   background: #2c3e50;
   margin-left: 10px;
+
+  margin-top: 5px;
+
 }
 .ticker {
   position: absolute;

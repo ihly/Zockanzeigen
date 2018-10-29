@@ -42,7 +42,7 @@
     }
     $tab_content .= '<div style="clear:both"></div></div>';
     $i++;
-
+	
    }
    ?>
 
@@ -68,15 +68,15 @@
 
    <body>
 
-
-
-
-
+   
+  
+   
+   
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-
+		
 
        <ul class="nav">
        <?php
@@ -88,9 +88,19 @@
           </p>
        <a href="login.php" class="anzeigeErstellen"><p id="anzeigeErstellenText">Anmeldung</p></a>
        </ul>
+	   
+	   
+	 
+	   
+	   
+       <div class="tab-content">
 
-
-	      <div id="Sidebar">
+       <?php
+       echo $tab_content;
+       ?>
+       </div>
+	   
+	        <div id="Sidebar">
          <a href="https://euw.leagueoflegends.com/de/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
          </a>
@@ -103,7 +113,7 @@
          <a href="https://fallout.bethesda.net/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
          </a>
-      </div>
+      </div> 
 
 	  <!-- <div id="mainbar">
 		  <div class="box">
@@ -118,11 +128,9 @@
 		  </div> -->
 
 		  <br/><br/>
+		  
+		
 
-
-
-
-
-
+       
    </body>
 </html>

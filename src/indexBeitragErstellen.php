@@ -18,11 +18,13 @@
 
     $name = mysqli_real_escape_string($db, $_POST['name']);
 
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+
 
   	// image file directory
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text, category, price, name) VALUES ('$image', '$image_text', '$category', '$price', '$name')";
+  	$sql = "INSERT INTO images (image, image_text, category, price, name, email) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email')";
   	// execute query
   	mysqli_query($db, $sql);
 
@@ -98,6 +100,13 @@
 
          <p class="Form">Preis</p>
          <input id="price" type="tablerow" name="price" placeholder="Preis" style="width:111.85px"/>
+
+    </div>
+
+    <div>
+
+         <p class="Form">Kontaktmail</p>
+         <input id="price" type="tablerow" name="email" placeholder="Kontaktmail" style="width:111.85px"/>
 
     </div>
 

@@ -6,11 +6,8 @@
   /* -webkit-column-gap: 0;
   -moz-column-gap: 0;
   column-gap: 0; */
-  -webkit-column-rule: 1px none #1a242f;
-  -moz-column-rule: 1px none #1a242f;
-  column-rule: 1px none #1a242f;
 	margin-top: 0;
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 0;
@@ -28,14 +25,24 @@ li {
   padding: 1em;
   text-align: center;
   border-bottom: 1px solid #1a242f;
+  height: 50px;
+  width: 80%;
+  color: white;
+  font-size: 17px;
 }
 .nav a:hover {
-  background: #1a242f;
+  background: black;
+}
+
+.tab-content {
+	left: 10px;
+	width: 75%;
+	
 }
 
 .container-4 input#search{
   width: 300px;
-  left:10px;
+  left:100px;
   height: 50px;
   background: white;
   border: none;
@@ -53,10 +60,7 @@ li {
   background: #1a242f;
 }
 
-#Produkte {
-	left:10px;
-	width: 1500px;
-}
+
 
 .anzeigeErstellen  {
   width: 300px;
@@ -75,11 +79,7 @@ li {
   text-decoration: none;
 }
 
-#anzeigeErstellenText {
-  margin-top: 12px;
-  color: white;
-  font-size: 17px;
-}
+
 
 
 body {
@@ -165,6 +165,7 @@ body {
 #Sidebar {
 	position: absolute;
 	right: 0;
+	top: 130px;
 	height: 500px;
 	margin-right: 0;
 }

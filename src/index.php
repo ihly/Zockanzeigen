@@ -14,10 +14,10 @@
     if($i == 0)
     {
      $tab_menu .= '
-      <li class="active"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
+      <li class="active" style="margin-bottom:40px; height:100%;"><a href="#'.$row["category_id"].'" data-toggle="tab">'.$row["category_name"].'</a></li>
      ';
      $tab_content .= '
-      <div id="'.$row["category_id"].'" class="tab-pane fade in active">
+      <div id="" style="margin-bottom:40px; height:100px;"'.$row["category_id"].'" class="tab-pane fade in active">
      ';
     }
     else
@@ -34,7 +34,7 @@
     while($sub_row = mysqli_fetch_array($product_result))
     {
      $tab_content .= '
-     <div class="col-md-3" style="margin-bottom:36px;">
+     <div class="col-md-3" style="margin-bottom:40px; height:100%;">
       <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" />
       <h4>'.$sub_row["name"].'</h4>
      </div>
@@ -42,6 +42,7 @@
     }
     $tab_content .= '<div style="clear:both"></div></div>';
     $i++;
+	
    }
    ?>
 
@@ -85,11 +86,21 @@
           <p id="anzeigeErstellenText">
            Anzeige erstellen
           </p>
-       <a href="login.php">Anmeldung</a>
+       <a href="login.php" class="anzeigeErstellen"><p id="anzeigeErstellenText">Anmeldung</p></a>
        </ul>
 	   
 	   
-	      <div id="Sidebar">
+	 
+	   
+	   
+       <div class="tab-content">
+
+       <?php
+       echo $tab_content;
+       ?>
+       </div>
+	   
+	        <div id="Sidebar">
          <a href="https://euw.leagueoflegends.com/de/" target="_blank">
          <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
          </a>
@@ -103,15 +114,6 @@
          <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
          </a>
       </div> 
-	   
-	   
-             <div class="container">
-       <div class="tab-content">
-
-       <?php
-       echo $tab_content;
-       ?>
-       </div>
 
 	  <!-- <div id="mainbar">
 		  <div class="box">
@@ -125,7 +127,7 @@
 			 </div>
 		  </div> -->
 
-		  <br /><br />
+		  <br/><br/>
 		  
 		
 

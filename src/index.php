@@ -35,7 +35,7 @@
     {
      $tab_content .= '
      <div class="col-md-3" style="margin-bottom:40px; height:100%;">
-      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" />
+      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
       <h4>'.$sub_row["name"].'</h4>
      </div>
      ';

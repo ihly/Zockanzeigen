@@ -74,10 +74,23 @@ INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) 
 (7, 'fifa18.jpg', 'Fifa 18 versende das Spiel Originalverpackt', 30.00, 'PS4 Spiel', 'Fifa 18'),
 (8, 'Goat.jpg', 'Ziegensimulator gratis versand', 900.00, 'PS4 Spiel', 'Goat <3'),
 (9, 'Sims4.jpg', 'The Sims Spiel in Wörth', 35.00, 'PS4 Spiel', 'Sims 4'),
-(10, 'TLOU.jpg', 'The Last of Us abholen in Pforzheim', 20.00, 'PS4 Spiel', 'Last of US');
-
-
-
+(10, 'TLOU.jpg', 'The Last of Us abholen in Pforzheim', 20.00, 'PS4 Spiel', 'Last of US'),
+(11, 'AssassinsCreedOrigin.jpg', 'Assassins Creed Origin gebraucht', 45.00, 'X-BOX Spiel', 'AC Origin'),
+(12, 'Battlefield1.jpg', 'Battlefield 1 kaum gespielt', 30.00, 'X-BOX Spiel', 'BF 1'),
+(13, 'Battlefront2.jpg', 'Battlefront 2', 25.00, 'X-BOX Spiel', 'Battlefront 2'),
+(14, 'Bo3.jpg', 'Black Ops 3 zu verkaufen', 18.00, 'X-BOX Spiel', 'BO 3'),
+(15, 'Bo4.jpg', 'Black Ops 4 for Sale', 32.00, 'X-BOX Spiel', 'BO 4'),
+(16, 'Fortnite.jpg', 'Fortnite gut erhalten', 26.00, 'X-BOX Spiel', 'Fortnite'),
+(17, 'Forza_Horizon_4.jpg', 'Forza 4 :)', 50.00, 'X-BOX Spiel', 'Forza H 4'),
+(18, 'Halo.jpg', 'Halo <3', 43.00, 'X-BOX Spiel', 'Halo'),
+(19, 'HaloWars.jpg', 'Halo Wars <3', 40.00, 'X-BOX Spiel', 'Halo Wars'),
+(20, 'Spiderman2.jpg', 'Spiderman2', 38.00, 'X-BOX Spiel', 'Spiderman 2'),
+(21, 'Titanfall.jpg', 'Titanfall mit Exklusivinhalt', 30.00, 'X-BOX Spiel', 'Titanfall'),
+(22, 'SNESBundle.jpg', '10 Verschiedene Spiele für die SNES siehe Grafik! Einfach melden per Mail!', 60.00, 'Nintendo Spiel', 'SNES Spiele'),
+(23, '3DSBundle.jpg', '25 3DS Spiele alle funktionieren! Zum Abholen in Mainz', 140.00, 'Nintendo Spiel', '3DS Bundle'),
+(24, 'Platin.jpg', 'Pokemon Platin Edition für den Nintendo DS, Versende auch gerne über aufpreis! Landau', 15.00, 'Nintendo Spiel', 'PKMN Platin'),
+(25, 'MK8.jpg', 'Mario Kart für die Switch Preis VB! in Stuttgart zum abholen', 70.00, 'Nintendo Spiel', 'Mario Kart 8'),
+(26, 'Sports.jpg', 'Wii Sports Resort für die Wii, wii kaputt spiel ganz.', 7.00, 'Nintendo Spiel', 'Wii Sports');
 
 -- --------------------------------------------------------
 

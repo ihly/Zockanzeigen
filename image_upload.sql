@@ -69,14 +69,14 @@ INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) 
 (2, 'XBOX.jpg','XBOX ONE gebraucht mit Controller in Etlingen zum Abholen', 150.00, 'Konsole', 'XBOX ONE'),
 (3, 'NES.jpg','Alte Nintendo Konsole funktionsfähig! mit 30 Spielen und 2 Controlern',250.00,'Konsole','NES'),
 (4, 'Nintendo.jpg','Nintendo DS Lite leichte gebrauchsspuren in Bruchsal', 75.00, 'Konsole', 'DS LITE' ),
-(5, 'Switch.jpg', 'Nintendo Switch Neu!!! Versende!', 299.00, 'Konsole','Switch');
-(6,'rdr2.jpg','Red Dead Redemtion Neu Key',75.00,'PS4 Spiel','Red Dead'),
-(7,'fifa18.jpg','Fifa 18 versende das Spiel Originalverpackt',30.00,'PS4 Spiel','Fifa 18'),
-(8,'Goat.jpg','Ziegensimulator gratis versand',900.00,'PS4 Spiel','Goat <3'),
-(9,'Sims4.jpg','The Sims Spiel in Wörth',35.00,'PS4 Spiel','Sims 4'),
-(10,'TLOU.jpg','The Last of Us abholen in Pforzheim',20.00,'PS4 Spiel','Last of US');
+(5, 'Switch.jpg', 'Nintendo Switch Neu!!! Versende!', 299.00, 'Konsole', 'Switch'),
+(6, 'rdr2.jpg', 'Red Dead Redemtion Neu Key', 75.00, 'PS4 Spiel', 'Red Dead'),
+(7, 'fifa18.jpg', 'Fifa 18 versende das Spiel Originalverpackt', 30.00, 'PS4 Spiel', 'Fifa 18'),
+(8, 'Goat.jpg', 'Ziegensimulator gratis versand', 900.00, 'PS4 Spiel', 'Goat <3'),
+(9, 'Sims4.jpg', 'The Sims Spiel in Wörth', 35.00, 'PS4 Spiel', 'Sims 4'),
+(10, 'TLOU.jpg', 'The Last of Us abholen in Pforzheim', 20.00, 'PS4 Spiel', 'Last of US');
 
---
+
 
 
 -- --------------------------------------------------------

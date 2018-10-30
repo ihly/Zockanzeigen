@@ -57,7 +57,7 @@ CREATE TABLE `images` (
   `image_text` text NOT NULL,
   `price` float DEFAULT NULL,
   `category` varchar(20) NOT NULL,
-  `name` varchar(12) NOT NULL
+  `name` varchar(24) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

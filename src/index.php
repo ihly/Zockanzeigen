@@ -48,9 +48,7 @@
    ?>
 
 <!DOCTYPE html>
-
 <html lang="de">
-
    <head>
       <meta charset="utf-8" />
 
@@ -63,9 +61,7 @@
       <script src="../src/index.js"></script>
       <link href="../src/index.css" rel="stylesheet">
    </head>
-
    <body>
-
       <a href="http://localhost/Zockanzeigen/src/index.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
@@ -81,6 +77,12 @@
          <div id="iFeatures">
            <div class="ticker">
              <li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
+           </div>
+         </div>
+
+         <div id="iFeatures">
+           <div class="ticker">
+             <li><p>+++ League of Legends: Michael Ihly erstmals mehr Lasthits als Tode +++</p></li>
            </div>
          </div>
 

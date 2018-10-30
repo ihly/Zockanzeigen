@@ -29,7 +29,7 @@
        </body>
      </html>
 <?php
-      
+
    }else{
       echo 'Login nicht erfolgreich.';
    }
@@ -41,11 +41,14 @@
  <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <title>Anmeldung</title>
   <link href="../src/index.css" rel="stylesheet">
  </head>
  <body/>
-  <a href="http://localhost/Zockanzeigen/src/index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
+  <a href="http://localhost/Zockanzeigen/src/index.php">
+    <h1 id="pageheader">Zockanzeigen</h1>
+  </a>
   <?php
    if(isset($errorMessage)) {
     echo $errorMessage;

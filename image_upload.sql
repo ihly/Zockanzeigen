@@ -69,28 +69,9 @@ INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) 
 (2, 'XBOX.jpg','XBOX ONE gebraucht mit Controller in Etlingen zum Abholen', 150.00, 'Konsole', 'XBOX ONE'),
 (3, 'NES.jpg','Alte Nintendo Konsole funktionsfähig! mit 30 Spielen und 2 Controlern',250.00,'Konsole','NES'),
 (4, 'Nintendo.jpg','Nintendo DS Lite leichte gebrauchsspuren in Bruchsal', 75.00, 'Konsole', 'DS LITE' ),
-(5, 'Switch.jpg', 'Nintendo Switch Neu!!! Versende!', 299.00, 'Konsole','Switch'),
-(6,'','Red Dead Redemtion Neu Key',75.00,'PS4 Spiel','Red Dead'),
-(7,'','Fifa 18 versende das Spiel Originalverpackt',30.00,'PS4 Spiel','Fifa 18'),
-(8,'','','',,'PS4 Spiel',''),
-(9,'','','',,'PS4 Spiel',''),
-(10,'','','',,'PS4 Spiel',''),
-(11,'','','',,'Nintendo Spiel',''),
-(12,'','','',,'Nintendo Spiel',''),
-(13,'','','',,'Nintendo Spiel',''),
-(14,'','','',,'Nintendo Spiel',''),
-(15,'','','',,'Nintendo Spiel',''),
-(16,'','','',,'X-BOX Spiel',''),
-(17,'','','',,'X-BOX Spiel',''),
-(18,'','','',,'X-BOX Spiel',''),
-(19,'','','',,'X-BOX Spiel',''),
-(20,'','','',,'X-BOX Spiel',''),
-(21,'','','',,'Sonstige',''),
-(22,'','','',,'Sonstige',''),
-(23,'','','',,'Sonstige',''),
-(24,'','','',,'Sonstige',''),
-(26,'','','',,'Sonstige',''),
+(5, 'Switch.jpg', 'Nintendo Switch Neu!!! Versende!', 299.00, 'Konsole','Switch');
 
+--
 
 
 -- --------------------------------------------------------

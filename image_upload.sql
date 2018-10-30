@@ -90,7 +90,20 @@ INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) 
 (23, '3DSBundle.jpg', '25 3DS Spiele alle funktionieren! Zum Abholen in Mainz', 140.00, 'Nintendo Spiel', '3DS Bundle'),
 (24, 'Platin.jpg', 'Pokemon Platin Edition für den Nintendo DS, Versende auch gerne über aufpreis! Landau', 15.00, 'Nintendo Spiel', 'PKMN Platin'),
 (25, 'MK8.jpg', 'Mario Kart für die Switch Preis VB! in Stuttgart zum abholen', 70.00, 'Nintendo Spiel', 'Mario Kart 8'),
-(26, 'Sports.jpg', 'Wii Sports Resort für die Wii, wii kaputt spiel ganz.', 7.00, 'Nintendo Spiel', 'Wii Sports');
+(26, 'Sports.jpg', 'Wii Sports Resort für die Wii, wii kaputt spiel ganz.', 7.00, 'Nintendo Spiel', 'Wii Sports'),
+(27, 'Controllerzubehoer.jpg', 'Spezialcontroller', 45.00, 'Sonstige', 'Spezialcontroller'),
+(28, 'Gamingseat.jpg', 'Gamingseat Deluxe', 400.00, 'Sonstige', 'Gamingseat Edel'),
+(29, 'gamingseat2.jpg', 'Gamingseat rot', 500.00, 'Sonstige', 'Gamingseat Rot'),
+(30, 'Headset.jpg', 'Headset schwarz', 60.00, 'Sonstige', 'Headset black'),
+(31, 'Headset2.jpg', 'Headset rot', 65.00, 'Sonstige', 'Headset red'),
+(32, 'Kindergaminglenkrad.jpg', 'Lenkrad Gaming', 120.00, 'Sonstige', 'Gaminglenkrad Kinder'),
+(33, 'Lenkrad.jpg', 'Lenkrad Ferrari', 140.00, 'Sonstige', 'Lenkrad Ferrari'),
+(34, 'Nintendozubehoer.jpg', 'Nintendo Zubehör', 100.00, 'Sonstige', 'Nintendo Zubehoer'),
+(35, 'Vr.jpg', 'Vr-Brille', 200.00, 'Sonstige', 'Vr-Brille');
+
+
+
+
 
 -- --------------------------------------------------------
 

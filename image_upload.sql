@@ -65,24 +65,33 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `image`, `image_text`, `price`, `category`, `name`) VALUES
-(35, 'unnamed.jpg', 'dfdfd', 1000000, 'Nintendo Spiel', ''),
-(36, 'unnamed.jpg', 'dfdfdf', 2000000, 'PS4 Spiel', ''),
-(37, 'lambo.jpg', 'test', 2000000, 'Nintendo Spiel', ''),
-(38, 'unnamed.jpg', 'fdf', 10000, 'Konsole', ''),
-(39, 'unnamed.jpg', 'vdfdf', 10003, 'PS4 Spiel', ''),
-(40, 'unnamed.jpg', '		fvfgf', 30.56, 'PS4 Spiel', ''),
-(41, 'unnamed.jpg', '	187	', 30.56, 'X-BOX Spiel', ''),
-(43, 'lambo.jpg', '		neu', 25, 'PS4 Spiel', 'gta 5'),
-(47, 'unnamed.jpg', '	dfd	', 34, 'Konsole', 'ihlyi'),
-(48, 'unnamed.jpg', '	df	', 0, 'PS4 Spiel', 'efdfdfd'),
-(54, 'unnamed.jpg', '	df	', 5555560, 'Konsole', 'dfdfd'),
-(55, 'lambo.jpg', '		dfdfs', 456, 'Konsole', 'neudfd'),
-(56, 'PS4Projekt.jpg', '	hnhnnh	', 30.56, 'PS4 Spiel', 'fvfggf'),
-(57, 'Nintendo.jpg', 'nhnhnh		', 30.56, 'Konsole', 'hhjhjhj'),
-(58, 'Nintendo.jpg', '	nnmnm	', 30.56, 'Nintendo Spiel', 'cvcvcvc'),
-(59, 'PS4Projekt.jpg', '	dfdsfsd	', 30.56, 'PS4 Spiel', 'ps4spiel'),
-(60, 'XBOX.jpg', '		dfdsfds', 30.56, 'X-BOX Spiel', 'xboxdddddd'),
-(62, 'Switch.jpg', '	dsfsdfsf	', 30.56, 'Sonstige', 'dfsdfds');
+(1, 'PS4Projekt.jpg', '	PS4 leichte gebrauchsspuren in Durlach zum Abholen	', 180.00, 'Konsole', 'PS4 Karlsruhe'),
+(2, 'XBOX.jpg','XBOX ONE gebraucht mit Controller in Etlingen zum Abholen', 150.00, 'Konsole', 'XBOX ONE'),
+(3, 'NES.jpg','Alte Nintendo Konsole funktionsfähig! mit 30 Spielen und 2 Controlern',250.00,'Konsole','NES'),
+(4, 'Nintendo.jpg','Nintendo DS Lite leichte gebrauchsspuren in Bruchsal', 75.00, 'Konsole', 'DS LITE' ),
+(5, 'Switch.jpg', 'Nintendo Switch Neu!!! Versende!', 299.00, 'Konsole','Switch'),
+(6,'','Red Dead Redemtion Neu Key',75.00,'PS4 Spiel','Red Dead'),
+(7,'','Fifa 18 versende das Spiel Originalverpackt',30.00,'PS4 Spiel','Fifa 18'),
+(8,'','','',,'PS4 Spiel',''),
+(9,'','','',,'PS4 Spiel',''),
+(10,'','','',,'PS4 Spiel',''),
+(11,'','','',,'Nintendo Spiel',''),
+(12,'','','',,'Nintendo Spiel',''),
+(13,'','','',,'Nintendo Spiel',''),
+(14,'','','',,'Nintendo Spiel',''),
+(15,'','','',,'Nintendo Spiel',''),
+(16,'','','',,'X-BOX Spiel',''),
+(17,'','','',,'X-BOX Spiel',''),
+(18,'','','',,'X-BOX Spiel',''),
+(19,'','','',,'X-BOX Spiel',''),
+(20,'','','',,'X-BOX Spiel',''),
+(21,'','','',,'Sonstige',''),
+(22,'','','',,'Sonstige',''),
+(23,'','','',,'Sonstige',''),
+(24,'','','',,'Sonstige',''),
+(26,'','','',,'Sonstige',''),
+
+
 
 -- --------------------------------------------------------
 

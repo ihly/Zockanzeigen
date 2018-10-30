@@ -66,24 +66,14 @@
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-	   	<div id="iFeatures">
-				<div class="ticker">
-					<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
-              </p></li>
-				</div>
-			</div>
-
 
          <div id="iFeatures">
            <div class="ticker">
-             <li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
-           </div>
-         </div>
-
-         <div id="iFeatures">
-           <div class="ticker">
-             <li><p>+++ League of Legends: Michael Ihly erstmals mehr Lasthits als Tode +++</p></li>
-           </div>
+			<li><p>+++ League of Legends: Michael Ihly erstmals mehr Lasthits als Tode +++ Tim Fischer nach Vorlesungspause in Diamant +++</p></li>
+			<li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
+			<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++</p></li>
+			<li><p>+++ Jonas Braun endlich auf Bronze 3 geclimbed +++ Darius Müller: Darum ist Garen so stark wie kein anderer Champ Q-R! +++</p></li> 
+		  </div>
          </div>
 
 

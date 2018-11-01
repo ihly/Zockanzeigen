@@ -8,7 +8,7 @@
    $tab_menu = '';
    $tab_content = '';
    $i = 0;
-
+   $e = 0;
    while($row = mysqli_fetch_array($tab_result))
    {
     if($i == 0)
@@ -29,7 +29,15 @@
       <div id="'.$row["category_id"].'" class="tab-pane fade">
      ';
     }
-    $product_query = "SELECT * FROM images WHERE category = '".$row["category_name"]."'";
+    if($e == 0)
+    {
+      $product_query = "SELECT * FROM images";
+      $e++;
+    }
+    else
+    {
+      $product_query = "SELECT * FROM images WHERE category = '".$row["category_name"]."'";
+    }
     $product_result = mysqli_query($connect, $product_query);
     while($sub_row = mysqli_fetch_array($product_result))
     {
@@ -72,18 +80,22 @@
 			<li><p>+++ League of Legends: Michael Ihly erstmals mehr Lasthits als Tode +++ Tim Fischer nach Vorlesungspause in Diamant +++</p></li>
 			<li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
 			<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++</p></li>
-			<li><p>+++ Jonas Braun endlich auf Bronze 3 geclimbed +++ Darius Müller: Darum ist Garen so stark wie kein anderer Champ Q-R! +++</p></li> 
+			<li><p>+++ Jonas Braun endlich auf Bronze 3 geclimbed +++ Darius Müller: Darum ist Garen so stark wie kein anderer Champ Q-R! +++</p></li>
 		  </div>
          </div>
 
 
-         <ul class="nav">
+      <ul class="nav">
+
        <?php
-       echo $tab_menu;
-       ?>
+        echo $tab_menu;
+        ?>
+
+
        <a href="login.php" class="anzeigeErstellen">
           <p id="anzeigeErstellenText">Anzeige erstellen</p>
        <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
+
        </ul>
 
 

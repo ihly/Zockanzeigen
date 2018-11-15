@@ -283,3 +283,9 @@ body {
 .ticker a {
   color: white;
 }
+
+.product_content {
+  text-align: center;
+  margin: auto;
+  display:block;
+}

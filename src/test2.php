@@ -43,14 +43,19 @@
     {
      $tab_content .= '
      <div class="col-md-3" style="margin-bottom:40px; height:100%;">
-      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
+      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 250px"/>
       <h4>'.$sub_row["name"].'</h4>
+      <h4>'.$sub_row["price"].' €</h4>
      </div>
      ';
     }
     $tab_content .= '<div style="clear:both"></div></div>';
     $i++;
+   }
 
+   while($row = mysqli_fetch_array($product_result))
+   {
+     // echo "<A HREF='detail.php?id=" . $row["id"] . "'>details</A>";
    }
 
    ?>
@@ -100,10 +105,10 @@
 
 
        <div class="tab-content">
+      <?php
+      echo $tab_content;
+      ?> 
 
-       <?php
-       echo $tab_content;
-       ?>
 
        </div>
 

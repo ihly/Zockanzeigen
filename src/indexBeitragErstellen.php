@@ -20,17 +20,19 @@
 
     $email = mysqli_real_escape_string($db, $_POST['email']);
 
+    $ort = mysqli_real_escape_string($db, $_POST['ort']);
+
 
   	// image file directory
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text, category, price, name, email) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email')";
+  	$sql = "INSERT INTO images (image, image_text, category, price, name, email, ort) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email', '$ort')";
   	// execute query
   	mysqli_query($db, $sql);
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "Image uploaded successfully";
-      header("Location: index.php");
+      header("Location: indexloggedin.php");
   	}else{
   		$msg = "Failed to upload image";
   	}
@@ -107,6 +109,13 @@
     <div>
 
          <p class="Form">Kontaktmail</p>
+         <input id="price" type="tablerow" name="email" placeholder="Kontaktmail" style="width:111.85px"/>
+
+    </div>
+
+    <div>
+
+         <p class="Form">Abholort</p>
          <input id="price" type="tablerow" name="email" placeholder="Kontaktmail" style="width:111.85px"/>
 
     </div>

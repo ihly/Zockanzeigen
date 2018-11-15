@@ -20,13 +20,12 @@
 
     $email = mysqli_real_escape_string($db, $_POST['email']);
 
-    $ort = mysqli_real_escape_string($db, $_POST['ort']);
 
 
   	// image file directory
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text, category, price, name, email, ort) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email', '$ort')";
+  	$sql = "INSERT INTO images (image, image_text, category, price, name, email) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email')";
   	// execute query
   	mysqli_query($db, $sql);
 

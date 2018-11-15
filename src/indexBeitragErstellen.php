@@ -42,8 +42,7 @@
   	$target = "images/".basename($image);
 
     if(!$error) {
-      $sql = "INSERT INTO images (name, price, email, category, image_text) VALUES ('$name','$price','$email','$category', '$image_text ')";
-
+      $sql = "INSERT INTO images (image, image_text, category, price, name, email) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email')";
       mysqli_query($db,$sql);
 
       $result = mysqli_query($db, "SELECT * FROM images");

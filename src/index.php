@@ -44,7 +44,7 @@
      $tab_content .= '
      <div class="col-md-3" style="margin-bottom:40px; height:100%;">
      <a href="detail.php?id='  . $sub_row["id"] . '">
-      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
+        <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
       <h4>'.$sub_row["name"].'</h4>
       <h4>'.$sub_row["price"].'€</h4>
       </a>
@@ -67,7 +67,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-      
+
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Zockanzeigen für Gamer</title>

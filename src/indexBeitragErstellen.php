@@ -138,7 +138,7 @@
 		</textarea>
     </div>
     <div class="Form">
-      <td><input class="Beitragerst" type="submit" name="upload" value="Beitrag erstellen"/></td>
+      <td><input type="submit" name="upload" value="Beitrag erstellen" style="color : black"/></td>
     </div>
 	</div>
   </form>

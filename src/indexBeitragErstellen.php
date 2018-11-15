@@ -49,7 +49,7 @@
       $result = mysqli_query($db, "SELECT * FROM images");
 
       if($result) {
-       echo 'Du wurdest erfolgreich registriert.<a href="login.php">Zum Login</a>';
+       echo 'Du hast erfolgreich eine Anzeige aufgegeben.<a href="indexloggedin.php">Zur Startseite</a>';
       } else {
        echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>Bitte Angaben überprüfen';
       }

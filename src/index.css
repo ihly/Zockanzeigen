@@ -280,6 +280,9 @@ body {
   font-weight: bold;
 }
 
+#Beitragerst{
+  font-color: black;
+}
 .ticker a {
   color: white;
 }

@@ -97,7 +97,7 @@
 
        <a href="indexBeitragErstellen.php" class="anzeigeErstellen">
           <p id="anzeigeErstellenTextloggedin">Anzeige erstellen</p>
-       <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
+       <a href="index.php" class="anzeigeErstellen"><p id="anzeigeAbmeldung">Abmeldung</p></a>
 
        </ul>
 

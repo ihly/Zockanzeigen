@@ -9,7 +9,7 @@
   {
   $product_content .= '
     <div class="col-md-3" style="margin-bottom:40px; height:100%;">
-     <img src="images/'.$row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
+     <img src="images/'.$row["image"].'" class="img-responsive img-thumbnail" style="height:auto; width: auto"/>
      <h4>'.$row["name"].'</h4>
      <h4>'.$row["price"].'€</h4>
      <h4>'.$row["category"].'</h4>
@@ -49,13 +49,26 @@
 			<li><p>+++ Warcraft 3 Reforged kommt! +++</p></li>
 		  </div>
     </div>
+    <center>
+      <table>
+        <caption id="table"></caption>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td id="anzeige" style="allign:right; length: auto; width: auto"></td>
+          <td id="anzeige" style="allign:right; length: auto; width: auto">
+            <?php
+            echo $product_content;
+            ?>
+          </td>
+        </tr>
 
+      </table>
+    </center>
 
       <div class="product_content">
 
-       <?php
-       echo $product_content;
-       ?>
+
 
      </div>
 

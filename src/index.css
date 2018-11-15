@@ -229,6 +229,14 @@ body {
   padding-bottom: 0;
 }
 
+#anzeige{
+  box-sizing: border-box;
+  width: 400%;
+
+  border 1px;
+  padding 10px;
+}
+
 .Form {
 	color:white;
 	font-weight: bold;

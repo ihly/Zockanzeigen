@@ -90,25 +90,18 @@
       </div>
 
 
-      <nav class="navbar">
-        <a href="#" class="logo"></a>
-        <ul class="main-nav" id="js-menu">
-          <?php
-           echo $tab_menu;
-           ?>
-        </ul>
-</nav>
+      <ul class="nav">
 
-      <!-- <ul class="nav">
-
-
+       <?php
+        echo $tab_menu;
+        ?>
 
 
        <a href="login.php" class="anzeigeErstellen">
           <p id="anzeigeErstellenText">Anzeige erstellen</p>
        <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
 
-       </ul> -->
+       </ul>
 
 
        <div class="tab-content">

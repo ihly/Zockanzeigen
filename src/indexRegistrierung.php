@@ -101,7 +101,7 @@
 
    <tr>
     <td></td>
-    <td><input type="submit" name="upload"/></td>
+    <td><input type="submit" name="upload" value="Regesterieren"/></td>
    </tr>
   </table>
  </center>

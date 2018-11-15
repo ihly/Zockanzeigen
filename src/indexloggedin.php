@@ -8,7 +8,7 @@
    $tab_menu = '';
    $tab_content = '';
    $i = 0;
-
+   $e = 0;
    while($row = mysqli_fetch_array($tab_result))
    {
     if($i == 0)
@@ -29,14 +29,25 @@
       <div id="'.$row["category_id"].'" class="tab-pane fade">
      ';
     }
-    $product_query = "SELECT * FROM images WHERE category = '".$row["category_name"]."'";
+    if($e == 0)
+    {
+      $product_query = "SELECT * FROM images";
+      $e++;
+    }
+    else
+    {
+      $product_query = "SELECT * FROM images WHERE category = '".$row["category_name"]."'";
+    }
     $product_result = mysqli_query($connect, $product_query);
     while($sub_row = mysqli_fetch_array($product_result))
     {
      $tab_content .= '
      <div class="col-md-3" style="margin-bottom:40px; height:100%;">
-      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" />
+     <a href="detail.php?id='  . $sub_row["id"] . '">
+      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
       <h4>'.$sub_row["name"].'</h4>
+      <h4>'.$sub_row["price"].'€</h4>
+      </a>
      </div>
      ';
     }
@@ -48,9 +59,7 @@
    ?>
 
 <!DOCTYPE html>
-
 <html lang="de">
-
    <head>
       <meta charset="utf-8" />
 
@@ -63,35 +72,33 @@
       <script src="../src/index.js"></script>
       <link href="../src/index.css" rel="stylesheet">
    </head>
-
    <body>
-
       <a href="http://localhost/Zockanzeigen/src/indexloggedin.php">
          <h1 id="pageheader">Zockanzeigen</h1>
       </a>
 
-	   	<div id="iFeatures">
-				<div class="ticker">
-					<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++
-              </p></li>
-				</div>
-			</div>
+
+      <div id="iFeatures">
+        <div class="ticker">
+   <li><p>+++ Nvidia Geforce RTX 2080 Ti - Weitere Berichte über Ausfälle inklusive brennender Grafikkarte +++</p></li>
+   <li><p>+++ Echtgeld-Preise im Fallout 76 Atomic-Shop - Und so viel Gratis-Atome gibt's pro Woche +++</p></li>
+   <li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++</p></li>
+   <li><p>+++ Warcraft 3 Reforged kommt! +++</p></li>
+   </div>
+      </div>
 
 
-         <div id="iFeatures">
-           <div class="ticker">
-             <li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
-           </div>
-         </div>
+      <ul class="nav">
 
-
-         <ul class="nav">
        <?php
-       echo $tab_menu;
-       ?>
-       <a href="IndexBeitragErstellen.php" class="anzeigeErstellen">
+        echo $tab_menu;
+        ?>
+
+
+       <a href="indexBeitragErstellen.php" class="anzeigeErstellen">
           <p id="anzeigeErstellenTextloggedin">Anzeige erstellen</p>
-       <a href="index.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Abmeldung</p></a>
+       <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
+
        </ul>
 
 

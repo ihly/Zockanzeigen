@@ -1,15 +1,14 @@
-<?php
-  // Create database connection
+  <?php
   $db = mysqli_connect("localhost", "root", "", "image_upload");
 
-  // Initialize message variable
   $msg = "";
 
-  // If upload button is clicked ...
+  $error = false;
+
   if (isset($_POST['upload'])) {
-  	// Get image name
-  	$image = $_FILES['image']['name'];
-  	// Get text
+
+    $image = $_FILES['image']['name'];
+
   	$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
 
     $category = mysqli_real_escape_string($db, $_POST['category']);
@@ -20,23 +19,51 @@
 
     $email = mysqli_real_escape_string($db, $_POST['email']);
 
+    if(strlen($name) == 0) {
+     echo 'Bitte ein Name eingeben<br>';
+     $error = true;
+    }
 
+    if(strlen($price) == 0) {
+     echo 'Bitte einen Preis eingeben<br>';
+     $error = true;
+    }
 
-  	// image file directory
+    if(strlen($category) == 0) {
+     echo 'Bitte eine Kategorie eingeben<br>';
+     $error = true;
+    }
+
+    if(strlen($email) == 0) {
+     echo 'Bitte eine Email eingeben<br>';
+     $error = true;
+    }
+
   	$target = "images/".basename($image);
 
-  	$sql = "INSERT INTO images (image, image_text, category, price, name, email) VALUES ('$image', '$image_text', '$category', '$price', '$name', '$email')";
-  	// execute query
-  	mysqli_query($db, $sql);
+    if(!$error) {
+      $sql = "INSERT INTO images (name, price, email, category, image_text) VALUES ('$name','$price','$email','$category', '$image_text ')";
+
+      mysqli_query($db,$sql);
+
+      $result = mysqli_query($db, "SELECT * FROM images");
+
+      if($result) {
+       echo 'Du wurdest erfolgreich registriert.<a href="login.php">Zum Login</a>';
+      } else {
+       echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>Bitte Angaben überprüfen';
+      }
+    }
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "Image uploaded successfully";
-      header("Location: indexloggedin.php");
   	}else{
   		$msg = "Failed to upload image";
   	}
   }
-  $result = mysqli_query($db, "SELECT * FROM images");
+
+
+
 ?>
 
 
@@ -51,24 +78,7 @@
     <link href="../src/index.css" rel="stylesheet">
   </head>
   <body/>
-  	<a href="index.php"><h1 id="pageheader">Zockanzeigen</h1></a>
-
-  	<div id="SidebarBeitragErstellen">
-  <a href="https://euw.leagueoflegends.com/de/" target="_blank">
-    <img class="mySlides" src="../Grafiken/Werbung2.jpg" alt="Selfhtml" />
-  </a>
-  <a href="https://www.callofduty.com/de/blackops4" target="_blank">
-    <img class="mySlides" src="../Grafiken/Werbung1.jpg" alt="Selfhtml"/>
-  </a>
-  <a href="https://playhearthstone.com/de-de/" target="_blank">
-    <img class="mySlides" src="../Grafiken/Werbung3.jpg" alt="Selfhtml"/>
-  </a>
-  <a href="https://fallout.bethesda.net/" target="_blank">
-    <img class="mySlides" src="../Grafiken/Werbung4.jpg" alt="Selfhtml"/>
-  </a>
-</div>
-
-
+  	<a href="indexloggedin.php"><h1 id="pageheader">Zockanzeigen</h1></a>
 
 <center>
 
@@ -79,7 +89,7 @@
     <div>
 
          <p class="Form">Artikelname</p>
-         <input id="name" type="tablerow" name="name" placeholder="Artikelname" style="width:111.85px" minlength="5"/>
+         <input id="name" type="tablerow" type="text" name="name" placeholder="Artikelname" minlength="5" style="width:111.85px" minlength="5"/>
 
     </div>
 
@@ -88,7 +98,7 @@
              <p class="Form">Kategorie</p>
 
           <select name="category" size="1">
-            <option>-------</option>
+            <option></option>
             <option>Konsole</option>
             <option>PS4 Spiel</option>
             <option>X-BOX Spiel</option>
@@ -101,21 +111,14 @@
     <div>
 
          <p class="Form">Preis</p>
-         <input id="price" type="tablerow" name="price" placeholder="Preis" style="width:111.85px"/>
+         <input id="price" type="tablerow" name="price" placeholder="Preis" minlength="2" style="width:111.85px"/>
 
     </div>
 
     <div>
 
          <p class="Form">Kontaktmail</p>
-         <input id="price" type="tablerow" name="email" placeholder="Kontaktmail" style="width:111.85px"/>
-
-    </div>
-
-    <div>
-
-         <p class="Form">Abholort</p>
-         <input id="price" type="tablerow" name="email" placeholder="Kontaktmail" style="width:111.85px"/>
+         <input id="email" type="tablerow" name="email" placeholder="Kontaktmail" minlength="5" style="width:111.85px"/>
 
     </div>
 
@@ -135,7 +138,7 @@
 		</textarea>
     </div>
     <div class="Form">
-      <button type="submit" name="upload">Beitrag erstellen</button>
+      <td><input type="submit" name="upload" value="Beitrag erstellen"/></td>
     </div>
 	</div>
   </form>

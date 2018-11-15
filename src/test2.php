@@ -43,19 +43,17 @@
     {
      $tab_content .= '
      <div class="col-md-3" style="margin-bottom:40px; height:100%;">
-      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 250px"/>
+     <a href="detail.php?id='  . $sub_row["id"] . '">
+      <img src="images/'.$sub_row["image"].'" class="img-responsive img-thumbnail" style="height:200px; width: 300px"/>
       <h4>'.$sub_row["name"].'</h4>
-      <h4>'.$sub_row["price"].' €</h4>
+      <h4>'.$sub_row["price"].'€</h4>
+      </a>
      </div>
      ';
     }
     $tab_content .= '<div style="clear:both"></div></div>';
     $i++;
-   }
 
-   while($row = mysqli_fetch_array($product_result))
-   {
-     // echo "<A HREF='detail.php?id=" . $row["id"] . "'>details</A>";
    }
 
    ?>
@@ -69,6 +67,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Zockanzeigen für Gamer</title>
       <script src="../src/index.js"></script>
@@ -80,35 +80,42 @@
       </a>
 
 
-         <div id="iFeatures">
-           <div class="ticker">
-			<li><p>+++ League of Legends: Michael Ihly erstmals mehr Lasthits als Tode +++ Tim Fischer nach Vorlesungspause in Diamant +++</p></li>
-			<li><p>+++ League of Legends Words Finalspiel Fanatic vs Invictus Gaming am 03. November 2018 +++</p></li>
-			<li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++</p></li>
-			<li><p>+++ Jonas Braun endlich auf Bronze 3 geclimbed +++ Darius Müller: Darum ist Garen so stark wie kein anderer Champ Q-R! +++</p></li>
-		  </div>
-         </div>
+      <div id="iFeatures">
+        <div class="ticker">
+   <li><p>+++ Nvidia Geforce RTX 2080 Ti - Weitere Berichte über Ausfälle inklusive brennender Grafikkarte +++</p></li>
+   <li><p>+++ Echtgeld-Preise im Fallout 76 Atomic-Shop - Und so viel Gratis-Atome gibt's pro Woche +++</p></li>
+   <li><p>+++ Game Releases 2018/2019 +++ Read Dead Redemption 2 released!!! +++ Battlefield V 20. November 2018 +++ Super Smash Bros. Ultimate 7. Dezember 2018 +++ Metro Exodus 22. Februar 2019 +++ Kingdom Hearts 25.Januar 2019 +++</p></li>
+   <li><p>+++ Warcraft 3 Reforged kommt! +++</p></li>
+   </div>
+      </div>
 
 
-      <ul class="nav">
+      <nav class="navbar">
+        <a href="#" class="logo"></a>
+        <ul class="main-nav" id="js-menu">
+          <?php
+           echo $tab_menu;
+           ?>
+        </ul>
+</nav>
 
-       <?php
-        echo $tab_menu;
-        ?>
+      <!-- <ul class="nav">
+
+
 
 
        <a href="login.php" class="anzeigeErstellen">
           <p id="anzeigeErstellenText">Anzeige erstellen</p>
        <a href="login.php" class="anzeigeErstellen"><p id="anzeigeAnmeldung">Anmeldung</p></a>
 
-       </ul>
+       </ul> -->
 
 
        <div class="tab-content">
-      <?php
-      echo $tab_content;
-      ?> 
 
+       <?php
+       echo $tab_content;
+       ?>
 
        </div>
 

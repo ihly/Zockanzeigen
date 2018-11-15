@@ -140,14 +140,15 @@ body {
 	height: 10%;
 }
 
+@media only screen and (min-width: 1200px) {
 #Sidebar {
 	position: absolute;
 	right: 0;
-	top: 170px;
+	top: 180px;
 	height: 500px;
 	margin-right: 0;
 }
-
+}
 #SidebarBeitragErstellen {
   position: absolute;
   right: 0;
@@ -163,15 +164,6 @@ body {
 	right: 30%;
 }
 
-#Vorschläge {
-	position: relative;
-	width: 79%;
-	height: 500px;
-	float: left;
-	background: yellow;
-	margin-top: 10px;
-
-}
 
 #Schrift {
 	color: black;
